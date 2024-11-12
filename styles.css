@@ -1,0 +1,135 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Sticky top banner styling */
+.top-banner {
+    background-color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox for alignment */
+    align-items: center;
+    justify-content: space-between; /* Separate logo and nav to opposite ends */
+}
+
+.banner-logo {
+    height: 40px;
+}
+
+/* Align nav links to the right */
+.top-banner nav {
+    margin-right: 20px; /* Space between nav and right edge */
+}
+
+.top-banner nav a {
+    color: rgb(156, 18, 18);
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Header styling */
+header {
+    background-color: #007f8c;
+    color: #fff;
+    padding: 40px 0; /* Increase padding for more vertical space */
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 60px; /* Offset for the top banner */
+}
+
+.header-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Optional: Adjust heading size */
+.header-container h1 {
+    font-size: 2.5rem; /* Increase heading font size */
+}
+
+.header-container p {
+    font-size: 1.2rem; /* Adjust paragraph font size for balance */
+}
+
+.logo {
+    height: 50px;
+    vertical-align: middle;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Offset main content for both banners */
+main {
+    padding-top: 0px; /* Adjust for the combined height of top banner and header */
+}
+
+
+/* Intro section */
+.intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0f7fa;
+}
+
+.intro h2 {
+    margin-bottom: 10px;
+}
+
+/* Guidelines section */
+.guidelines {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.guideline-item {
+    width: 30%;
+    text-align: center;
+}
+
+.guideline-item img {
+    height: 200px; /* Increase the height */
+    width: auto; /* Optional: keep aspect ratio */
+    margin-bottom: 10px;
+}
+
+/* Links styling */
+a {
+    color: rgb(156, 18, 18); /* Set the link color to red */
+    text-decoration: underline; /* Optional: removes underline */
+}
+
+/* Prevent visited links from changing color */
+a:visited {
+    color: rgb(156, 18, 18); /* Keeps visited links red */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
